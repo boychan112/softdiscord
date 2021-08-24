@@ -198,5 +198,9 @@ async def on_message(message):
         embed=discord.Embed(description="```fix\n힐링포션```\n난초 + 유리병\n난초 = 약초 + 꽃\n========================\n```fix\n구급상자```\n지혈제 + 붕대\n지혈제 = 알코올 + 붕대\n========================\n```fix\n생선튀김```\n붕어 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```fix\n감자튀김```\n감자 + 뜨거운 오일\n뜨거운 오일 = 오일 + 라이터\n========================\n```fix\n피쉬앤칩스```\n감자튀김 + 생선튀김\n========================\n```fix\n햄버거```\n고기 + 빵\n========================\n```fix\n감자튀김```\n감자 + 뜨거운 오일\n뜨거운오일 = 라이터 + 오일\n========================\n```fix\n일레븐세트```\n햄버거 + 감자튀김\n========================", color=0x00ff56)
         await message.channel.send(embed=embed)
         
+    if content.startswith("!로드맵"):
+        embed=discord.Embed(description="이터널 리턴 로드맵 바로가기",url = "https://trello.com/b/EjEt8ZPk/%EC%9D%B4%ED%84%B0%EB%84%90-%EB%A6%AC%ED%84%B4-%EB%A1%9C%EB%93%9C%EB%A7%B5", color=0x00ff56)
+        await message.channel.send(embed=embed)
+        
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
