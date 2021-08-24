@@ -199,7 +199,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if content.startswith("!로드맵"):
-        embed=discord.Embed(description="이터널 리턴 로드맵 바로가기",url = "https://trello.com/b/EjEt8ZPk/%EC%9D%B4%ED%84%B0%EB%84%90-%EB%A6%AC%ED%84%B4-%EB%A1%9C%EB%93%9C%EB%A7%B5", color=0x00ff56)
+        embed.set_author(name="이터널 리턴 로드맵 바로가기", url="https://trello.com/b/EjEt8ZPk/%EC%9D%B4%ED%84%B0%EB%84%90-%EB%A6%AC%ED%84%B4-%EB%A1%9C%EB%93%9C%EB%A7%B5")
         await message.channel.send(embed=embed)
         
 access_token = os.environ["BOT_TOKEN"]
