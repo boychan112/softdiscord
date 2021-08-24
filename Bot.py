@@ -95,7 +95,7 @@ async def on_message(message):
 
     @client.event
     async def on_message(message):
-    if message.content.startswith("!투표"):
+        if message.content.startswith("!투표"):
         vote = message.content[4:].split("/")
         await message.channel.send("투표 - " + vote[0])
         for i in range(1, len(vote)):
