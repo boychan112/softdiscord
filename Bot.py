@@ -96,11 +96,11 @@ async def on_message(message):
     @client.event
     async def on_message(message):
         if message.content.startswith("!투표"):
-        vote = message.content[4:].split("/")
-        await message.channel.send("투표 - " + vote[0])
-        for i in range(1, len(vote)):
-            choose = await message.channel.send("" + vote[i] + "")
-            await choose.add_reaction(':thumbsup:')
+            vote = message.content[4:].split("/")
+            await message.channel.send("투표 - " + vote[0])
+            for i in range(1, len(vote)):
+                choose = await message.channel.send("" + vote[i] + "")
+                await choose.add_reaction(':thumbsup:')
                 
     if message.content.startswith ("!공지"):
         await message.channel.purge(limit=1)
