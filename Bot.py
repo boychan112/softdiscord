@@ -4,6 +4,8 @@ import os
 import time
 import pytz
 import asyncio
+from discord import tasks
+from itertools import cycle
 
 client = discord.Client()
 
@@ -15,13 +17,10 @@ async def on_ready():
     print("디스코드봇 버전 : " + str(discord.__version__))
     print('------')
     
-@bot.event
-async def on_ready():
-    status=cycle(["Visual Studio Code","League Of Legend","Valorant"])
-    @tasks.loop(seconds=5)
-    async def change_status():
-        await bot.change_presence(activity=discord.Game(next(status)))
-    change_status.start()
+status = cycle(["Visual Studio Code", "Dev C++", "League Of Legend", "!도움말", "ZOOM"])
+@tasks.loop(seconds=5)
+async def change_status():
+    await client.change_presence(activity=discord.Game(next(status)))
 
 @client.event
 async def on_message(message):
