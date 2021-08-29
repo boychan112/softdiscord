@@ -17,6 +17,8 @@ async def on_ready():
     print("디스코드봇 버전 : " + str(discord.__version__))
     print('------')
     
+    change_status.start()
+    
 status = cycle(["Visual Studio Code", "Dev C++", "League Of Legend", "!도움말", "ZOOM"])
 @tasks.loop(seconds=5)
 async def change_status():
