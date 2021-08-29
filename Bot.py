@@ -4,7 +4,7 @@ import os
 import time
 import pytz
 import asyncio
-from discord import tasks
+from discord.ext import tasks
 from itertools import cycle
 
 client = discord.Client()
