@@ -180,6 +180,12 @@ async def on_message(message):
         embed=discord.Embed(description="닥지지 {} 바로가기\nhttps://dak.gg/bser/players/{}".format(nick,nick), color=0x00ff56)
         embed.set_author(name="<<{}>>".format(nick))
         await message.channel.send(embed=embed)
+    
+    if content.startswith("!깃허브"):
+        nick = message.content[4:]
+        embed=discord.Embed(description="깃허브 {} 바로가기\nhttp://github.com/{}".format(nick,nick), color=0x00ff56)
+        embed.set_author(name="<<{}>>".format(nick))
+        await message.channel.send(embed=embed)
         
     if content.startswith("!음식지도"):
         embed=discord.Embed(title=" ", description=" ", color=0x00ff56)
