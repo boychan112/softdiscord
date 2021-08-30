@@ -163,9 +163,9 @@ async def on_message(message):
     if(message.content == "!시간"):
         await message.channel.send(embed=discord.Embed(title="Time", timestamp=datetime.datetime.utcnow()))
         
-    if content.startswith("!옵지"):
+    if content.startswith("!닥지"):
         nick = message.content[4:]
-        embed=discord.Embed(description="오피지지 {} 바로가기\nhttps://www.op.gg/summoner/userName={}".format(nick,nick), color=0x00ff56)
+        embed=discord.Embed(description="닥지지 {} 바로가기\nhttps://dak.gg/bser/players/{}".format(nick,nick), color=0x00ff56)
         embed.set_author(name="<<{}>>".format(nick))
         await message.channel.send(embed=embed)
         
@@ -183,7 +183,7 @@ async def on_message(message):
     
     if content.startswith("!깃허브"):
         nick = message.content[4:]
-        embed=discord.Embed(description="깃허브 {} 바로가기\nhttp://github.com/{}".format(nick,nick), color=0x00ff56)
+        embed=discord.Embed(description="깃허브 {} 바로가기\nhttps://github.com/{}".format(nick,nick), color=0x00ff56)
         embed.set_author(name="<<{}>>".format(nick))
         await message.channel.send(embed=embed)
         
