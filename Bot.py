@@ -82,7 +82,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if content.startswith("!도움말"):
-        embed=discord.Embed(description="```diff\n-------반디코-------\n!준민이 뺨따꾸 때리기\n!인백이의 드립은\n!자기소개\n!시간\n!청소 (청소할 메시지 개수)\n!투표/(투표항목)/(투표항목)...\n!시간표\n!월시간표\n!화시간표\n!수시간표\n!목시간표\n!금시간표\n!공지 (공지내용)\n\n-------롤체-------\n!롤체지지\n!오피지지\n!악동\n!빛도자\n!용족\n!괴생명체\n!재생술사\n!망각\n!옵지 (닉네임)\n!롤체 (닉네임)\n\n-------이터널 리턴-------\n!닥지 (닉네임)\n!음식지도\n!로드맵\n!지도\n!레시피```", color=0x00ff55)
+        embed=discord.Embed(description="```diff\n-------반디코-------\n!준민이 뺨따꾸 때리기\n!인백이의 드립은\n!자기소개\n!시간\n!깃헙 (아이디)\n!청소 (청소할 메시지 개수)\n!투표/(투표항목)/(투표항목)...\n!시간표\n!월시간표\n!화시간표\n!수시간표\n!목시간표\n!금시간표\n!공지 (공지내용)\n\n-------롤체-------\n!롤체지지\n!오피지지\n!악동\n!빛도자\n!용족\n!괴생명체\n!재생술사\n!망각\n!옵지 (닉네임)\n!롤체 (닉네임)\n\n-------이터널 리턴-------\n!닥지 (닉네임)\n!음식지도\n!로드맵\n!지도\n!레시피```", color=0x00ff55)
         embed.set_author(name="<<명령어>>", url="")
         await message.channel.send(embed=embed)
     
