@@ -19,7 +19,7 @@ async def on_ready():
     
     change_status.start()
     
-status = cycle(["Visual Studio Code", "Dev C++", "League f Legend", "!도움말", "ZOOM"])
+status = cycle(["Visual Studio Code", "Dev C++", "League of Legend", "!도움말", "ZOOM"])
 @tasks.loop(seconds=10)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
@@ -210,3 +210,4 @@ async def on_message(message):
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
+
