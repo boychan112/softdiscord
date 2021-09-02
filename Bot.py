@@ -70,7 +70,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!목시간표"):
-        embed=discord.Embed(description="<1교시>\n과학\nhttps://zoom.us/j/8212455526?pwd=SnRkaFBZU05ETHFWOExRMXJlc243Zz09\n암호 : 5526\n\n<2교시>\n프로\n박진영선생님\n\n<3교시>\n프로\n박진영선생님\n\n<4교시>\n체육\nhttps://us02web.zoom.us/j/5523718127?pwd=TEhQeFJaanJ0dVVuOUVIdzFJUTRIUT09\n암호 : 2246\n\n<5교시>\n국어\nhttps://us02web.zoom.us/j/8980834250\n암호 : 4250\n\n<6교시>\n영어\nhttps://zoom.us/j/7334811715?pwd=TnAwc2dMeWFHYlRWdkFocTlQVWVlQT09\n\n<7교시>\n사회\n이진경선생님\nhttps://zoom.us/j/9785974688\n암호 : 4688", color=0x00ff56)
+        embed=discord.Embed(description="<1교시>\n과학\nhttps://zoom.us/j/8212455526?pwd=SnRkaFBZU05ETHFWOExRMXJlc243Zz09\n암호 : 5526\n\n<2교시>\n프로\n박진영선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<3교시>\n프로\n박진영선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<4교시>\n체육\nhttps://us02web.zoom.us/j/5523718127?pwd=TEhQeFJaanJ0dVVuOUVIdzFJUTRIUT09\n암호 : 2246\n\n<5교시>\n국어\nhttps://us02web.zoom.us/j/8980834250\n암호 : 4250\n\n<6교시>\n영어\nhttps://zoom.us/j/7334811715?pwd=TnAwc2dMeWFHYlRWdkFocTlQVWVlQT09\n\n<7교시>\n사회\n이진경선생님\nhttps://zoom.us/j/9785974688\n암호 : 4688", color=0x00ff56)
         embed.set_author(name="IT 소프트웨어과 1-9 목요일 시간표", url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         embed.set_image(url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         await message.channel.send(embed=embed)
