@@ -76,9 +76,14 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!금시간표"):
-        embed=discord.Embed(description="<1교시>\n미술\n\n<2교시>\n미술\n\n<3교시>\n처리\n\n<4교시>\n처리\n\n<5교시>\n융합\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n창체\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n", color=0x00ff56)
+        embed=discord.Embed(description="<1교시>\n미술\n\n<2교시>\n미술\n\n<3교시>\n처리\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<4교시>\n처리\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<5교시>\n융합\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n창체\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n", color=0x00ff56)
         embed.set_author(name="IT 소프트웨어과 1-9 금요일 시간표", url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         embed.set_image(url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!시정표"):
+        embed=discord.Embed(description="<1교시>\n09:10 ~ 10:00\n<2교시>\n10:10 ~ 11:00\n<3교시>\n11:10 ~ 12:00\n<4교시>\n12:10 ~ 1:00\n<5교시>\n02:00 ~ 2:50\n<6교시>\n03:00 ~ 3:50\n<7교시>\n04:00 ~ 4:50", color=0x00ff56)
+        embed.set_author(name="수원정보과학고등학교 시정표", url=" ")
         await message.channel.send(embed=embed)
         
     if content.startswith("!도움말"):
