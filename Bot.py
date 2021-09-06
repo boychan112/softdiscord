@@ -92,7 +92,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!코드업"):
-        nick = message.content[6:]
+        nick = message.content[5:]
         embed=discord.Embed(description="코드업 {} 바로가기\nhttps://www.codeup.kr/problem.php?id={}".format(nick,nick), color=0x00ff56)
         embed.set_author(name="<<{}번 문제>>".format(nick))
         await message.channel.send(embed=embed)
