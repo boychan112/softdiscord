@@ -148,7 +148,7 @@ async def on_message(message):
 
     if content.startswith("!파이썬"):
         embed=discord.Embed(description="https://replit.com/", color=0xffffff)
-        embed.set_author(name="<<오피지지>>",url="https://replit.com/")
+        embed.set_author(name="<<REPLIT>>",url="https://replit.com/")
         await message.channel.send(embed=embed)
    
     if content.startswith("!9월 학사일정"):
