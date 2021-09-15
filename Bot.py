@@ -146,29 +146,35 @@ async def on_message(message):
         embed.set_author(name="<<오피지지>>",url="https://op.gg")
         await message.channel.send(embed=embed)
 
-    if content.startswith("!빛도자"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=32e2fa40e94011ebbfb6fbef3103b627", color=0x00ff56)
-        embed.set_author(name="<<7빛의 인도자  2망령  2기원자  3싸움꾼  2재생술사>>",url="https://lolchess.gg/builder/set5.5?deck=32e2fa40e94011ebbfb6fbef3103b627")
+    if content.startswith("!파이썬"):
+        embed=discord.Embed(description="https://replit.com/", color=0xffffff)
+        embed.set_author(name="<<오피지지>>",url="https://replit.com/")
         await message.channel.send(embed=embed)
-        
-    if content.startswith("!용족"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=5ad9ced0f5ab11eb954c75ec6e5adda9", color=0x00ff56)
-        embed.set_author(name="<<5용족 3척후병 3감시자 2싸움꾼>>",url="https://lolchess.gg/builder/set5.5?deck=32e2fa40e94011ebbfb6fbef3103b627")
+   
+    if content.startswith("!9월 학사일정"):
+        embed=discord.Embed(description="14일 : 영어듣기평가(1학년)\n15일 : 영어듣기평가(2학년)\n17일 : 교내체육대회\n21일 : 추석 & 킹갓제네럴엠페러 서버장 이원찬 탄신일\n30일 : 수정제", color=0x00ff56)
+        embed.set_author(name="<<수원정보과학고등학교 9월 학사일정>>",url=" ")
         await message.channel.send(embed=embed)
+
     
-    if content.startswith("!괴생명체"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=042b86f0e9ea11ebb5e589e115fb8433", color=0x00ff56)
-        embed.set_author(name="<<4괴생명체  3망령  4주문술사  2싸움꾼>>",url="https://lolchess.gg/builder/set5.5?deck=042b86f0e9ea11ebb5e589e115fb8433")
+    if content.startswith("!10월 학사일정"):
+        embed=discord.Embed(description="1일 : 체험학습\n8일 : 동아리\n12~14일 : 1차 지필평가 & 졸업고사", color=0x00ff56)
+        embed.set_author(name="<<수원정보과학고등학교 10월 학사일정>>",url=" ")
         await message.channel.send(embed=embed)
-    
-    if content.startswith("!재생술사"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=527fcb90ef8911eba0c385872c72b794", color=0x00ff56)
-        embed.set_author(name="<<4재생술사 2기원자 2빛도자 2악동 3감시자 3>>",url="https://lolchess.gg/builder/set5.5?deck=527fcb90ef8911eba0c385872c72b794")
+
+    if content.startswith("!11월 학사일정"):
+        embed=discord.Embed(description="5일 : 동아리\n18일 : 수능\n19일 : 동아리", color=0x00ff56)
+        embed.set_author(name="<<수원정보과학고등학교 11월 학사일정>>",url=" ")
         await message.channel.send(embed=embed)
-        
-    if content.startswith("!망각"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=83fa7470fa5811ebb02167a6298483f0", color=0x00ff56)
-        embed.set_author(name="<<6망각 2기병대 2철갑 2>>",url="https://lolchess.gg/builder/set5.5?deck=83fa7470fa5811ebb02167a6298483f0")
+
+    if content.startswith("!12월 학사일정"):
+        embed=discord.Embed(description="10일 : 동아리\n20~23일\n25일 : 성탄절", color=0x00ff56)
+        embed.set_author(name="<<수원정보과학고등학교 12월 학사일정>>",url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!1월 학사일정"):
+        embed=discord.Embed(description="1일 : 신정\n6일 : 교내합창대회\n7일 : 동아리\n11일 : 졸업식", color=0x00ff56)
+        embed.set_author(name="<<수원정보과학고등학교 1월 학사일정>>",url=" ")
         await message.channel.send(embed=embed)
         
     if(message.content == "!시간"):
