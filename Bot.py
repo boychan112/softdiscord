@@ -58,7 +58,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
     
     if content.startswith("!화시간표"):
-        embed=discord.Embed(description="<1교시>\n체육\nhttps://us02web.zoom.us/j/5523718127?pwd=TEhQeFJaanJ0dVVuOUVIdzFJUTRIUT09\n암호 : 2246\n\n<2교시>\n컴일\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<3교시>\n컴일\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n\n<4교시>\n영어\nhttps://zoom.us/j/7334811715?pwd=TnAwc2dMeWFHYlRWdkFocTlQVWVlQT09\n\n<5교시>\n수학\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n음악\nhttps://zoom.us/j/3079582246?pwd=clh3Ym82NGNDZXZlTC9yUzR2RUhnZz09\n암호 : 2246\n\n<7교시>\n사회\n이진경선생님\nhttps://zoom.us/j/9785974688\n암호 : 4688", color=0x00ff56)
+        embed=discord.Embed(description="<1교시>\n체육\nhttps://us02web.zoom.us/j/5523718127?pwd=TEhQeFJaanJ0dVVuOUVIdzFJUTRIUT09\n암호 : 2246\n\n<2교시>\n컴일\n임미경선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n박진영선생님\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<3교시>\n컴일\n임미경선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n박진영선생님\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<4교시>\n영어\nhttps://zoom.us/j/7334811715?pwd=TnAwc2dMeWFHYlRWdkFocTlQVWVlQT09\n\n<5교시>\n수학\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n음악\nhttps://zoom.us/j/3079582246?pwd=clh3Ym82NGNDZXZlTC9yUzR2RUhnZz09\n암호 : 2246\n\n<7교시>\n사회\n이진경선생님\nhttps://zoom.us/j/9785974688\n암호 : 4688", color=0x00ff56)
         embed.set_author(name="IT 소프트웨어과 1-9 화요일 시간표", url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         embed.set_image(url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         await message.channel.send(embed=embed)
@@ -76,7 +76,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!금시간표"):
-        embed=discord.Embed(description="<1교시>\n미술\n\n<2교시>\n미술\n\n<3교시>\n처리\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<4교시>\n처리\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<5교시>\n융합\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n창체\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n", color=0x00ff56)
+        embed=discord.Embed(description="<1교시>\n미술\nhttps://us02web.zoom.us/j/88329393006?pwd=bks5STl3RHRQYU9SZDJjNEVzNUp5UT09\n\n<2교시>\n미술\nhttps://us02web.zoom.us/j/88329393006?pwd=bks5STl3RHRQYU9SZDJjNEVzNUp5UT09\n\n<3교시>\n처리\n임미경선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n박진영선생님\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<4교시>\n처리\n임미경선생님\nhttps://zoom.us/j/3477694372?pwd=NlIvbDlGRHVKQlQ4WVphSVg3RkJOQT09#success\n박진영선생님\nhttps://zoom.us/j/8064557267?pwd=VjUrbUxJZkI2bDJPNklIZHA1YkpBZz09\n\n<5교시>\n융합\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n\n<6교시>\n창체\nhttps://us02web.zoom.us/j/7076631677?pwd=RkVPYzRXcDVrdXM3VEUyTlBHMXN2Zz09\n", color=0x00ff56)
         embed.set_author(name="IT 소프트웨어과 1-9 금요일 시간표", url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         embed.set_image(url="https://cdn.discordapp.com/attachments/873384182997479457/879342240839905360/unknown.png")
         await message.channel.send(embed=embed)
