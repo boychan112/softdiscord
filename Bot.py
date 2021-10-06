@@ -229,8 +229,8 @@ async def on_message(message):
         i = (message.author.guild_permissions.administrator)
 
         if i is True:
-            amount = message.content[4:]
-            for x in range(0.amount):
+            dob = message.content[4:]
+            for x in dob:
                 await message.channel.send("도배메시지")
         
         if i is False:
