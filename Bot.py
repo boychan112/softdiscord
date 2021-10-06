@@ -224,6 +224,18 @@ async def on_message(message):
         embed=discord.Embed(title=" ", description=" ", color=0x00ff56)
         embed.set_author(name="이터널 리턴 로드맵 바로가기", url="https://trello.com/b/EjEt8ZPk/%EC%9D%B4%ED%84%B0%EB%84%90-%EB%A6%AC%ED%84%B4-%EB%A1%9C%EB%93%9C%EB%A7%B5")
         await message.channel.send(embed=embed)
+
+    if message.content.startswith ("!도배"):
+        i = (message.author.guild_permissions.administrator)
+
+        if i is True:
+            amount = message.content[4:]
+            for x in range(amount):
+                await message.channel.send("도배메시지")
+        
+        if i is False:
+            await message.channel.purge(limit=1)
+            await message.channel.send("{}, 당신은 명령어를 사용할 수 있는 권한이 없습니다".format(message.author.mention))
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
