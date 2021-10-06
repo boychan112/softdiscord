@@ -235,8 +235,7 @@ async def on_message(message):
                 await message.channel.send("도배메시지")
         
         if i is False:
-            await message.channel.purge(limit=1)
-            await message.channel.send("{}, 당신은 명령어를 사용할 수 있는 권한이 없습니다".format(message.author.mention))
+            await message.channel.send("{}, 응 관리자 아니죠? 컷! ㅋ".format(message.author.mention))
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
