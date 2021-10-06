@@ -230,7 +230,7 @@ async def on_message(message):
 
         if i is True:
             dob = message.content[4:]
-            for x in dob:
+            for x in range(dob):
                 await message.channel.send("도배메시지")
         
         if i is False:
