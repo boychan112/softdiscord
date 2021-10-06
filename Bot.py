@@ -230,7 +230,7 @@ async def on_message(message):
 
         if i is True:
             amount = message.content[4:]
-            for x in range(amount):
+            for x in range(0.amount):
                 await message.channel.send("도배메시지")
         
         if i is False:
