@@ -87,7 +87,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         
     if content.startswith("!도움말"):
-        embed=discord.Embed(description="```diff\n-------반디코-------\n!준민이 뺨따꾸 때리기\n!인백이의 드립은\n!자기소개\n!시간\n!깃헙 (아이디)\n!청소 (청소할 메시지 개수)\n!투표/(투표항목)/(투표항목)...\n!시간표\n!월시간표\n!화시간표\n!수시간표\n!목시간표\n!금시간표\n!공지 (공지내용)\n\n-------롤체-------\n!롤체지지\n!오피지지\n!악동\n!빛도자\n!용족\n!괴생명체\n!재생술사\n!망각\n!옵지 (닉네임)\n!롤체 (닉네임)\n\n-------이터널 리턴-------\n!닥지 (닉네임)\n!음식지도\n!로드맵\n!지도\n!레시피```", color=0x00ff55)
+        embed=discord.Embed(description="```diff\n-------반디코-------\n!준민이 뺨따꾸 때리기\n!인백이의 드립은\n!자기소개\n!시간\n!깃헙 (아이디)\n!청소 (청소할 메시지 개수)\n!투표/(투표항목)/(투표항목)...\n!시간표\n!월시간표\n!화시간표\n!수시간표\n!목시간표\n!금시간표\n!공지 (공지내용)\n!오피지지\n!옵지 (닉네임)\n\n-------롤체-------\n!롤체지지\n!롤체 (닉네임)\n!(레벨)확률\n-------이터널 리턴-------\n!닥지 (닉네임)\n!음식지도\n!로드맵\n!지도\n!레시피```", color=0x00ff55)
         embed.set_author(name="<<명령어>>", url="")
         await message.channel.send(embed=embed)
 
@@ -126,9 +126,69 @@ async def on_message(message):
         if i is False:
             await message.channel.send("{}, 당신은 관리자가 아닙니다".format(message.author.mention))
     
-    if content.startswith("!악동"):
-        embed=discord.Embed(description="https://lolchess.gg/builder/set5.5?deck=891e2900e9ea11eb9b07371539a3adea", color=0x00ff56)
-        embed.set_author(name="<<6악동  2기병대  2신비술사>>" , url="https://lolchess.gg/builder/set5.5?deck=891e2900e9ea11eb9b07371539a3adea")
+    if content.startswith("!2확률"):
+        embed=discord.Embed(description="100/0/0/0/0", color=0x00ff56)
+        embed.set_author(name="<<2렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!3확률"):
+        embed=discord.Embed(description="75/25/0/0/0", color=0x00ff56)
+        embed.set_author(name="<<3렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!4확률"):
+        embed=discord.Embed(description="55/30/15/0/0", color=0x00ff56)
+        embed.set_author(name="<<4렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!5확률"):
+        embed=discord.Embed(description="45/33/20/2/0", color=0x00ff56)
+        embed.set_author(name="<<5렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!6확률"):
+        embed=discord.Embed(description="25/40/30/5/0", color=0x00ff56)
+        embed.set_author(name="<<6렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+    
+    if content.startswith("!7확률"):
+        embed=discord.Embed(description="19/30/35/15/1", color=0x00ff56)
+        embed.set_author(name="<<7렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!8확률"):
+        embed=discord.Embed(description="15/20/35/25/5", color=0x00ff56)
+        embed.set_author(name="<<8렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!9확률"):
+        embed=discord.Embed(description="10/15/30/30/15", color=0x00ff56)
+        embed.set_author(name="<<9렙 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!1코확률"):
+        embed=discord.Embed(description="100/100/75/55/45/25/19/15/10", color=0x00ff56)
+        embed.set_author(name="<<1코스트 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!2코확률"):
+        embed=discord.Embed(description="0/0/25/30/33/40/30/20/15", color=0x00ff56)
+        embed.set_author(name="<<2코스트 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!3코확률"):
+        embed=discord.Embed(description="0/0/0/15/20/30/35/35/30", color=0x00ff56)
+        embed.set_author(name="<<3코스트 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!4코확률"):
+        embed=discord.Embed(description="0/0/0/0/2/5/15/25/30", color=0x00ff56)
+        embed.set_author(name="<<4코스트 확률>>" , url=" ")
+        await message.channel.send(embed=embed)
+
+    if content.startswith("!5코확률"):
+        embed=discord.Embed(description="0/0/0/0/0/0/1/5/15", color=0x00ff56)
+        embed.set_author(name="<<5코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
     if content.startswith("!롤체지지"):
@@ -235,7 +295,8 @@ async def on_message(message):
                 await message.channel.send("도배메시지")
         
         if i is False:
-            await message.channel.send("{}, 응 관리자 아니죠? 컷! ㅋ".format(message.author.mention))
+            await message.channel.purge(limit=1)
+            await message.channel.send("{}, 당신은 명령어를 사용할 수 있는 권한이 없습니다".format(message.author.mention))
         
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
