@@ -167,27 +167,27 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
     if content.startswith("!1코확률"):
-        embed=discord.Embed(description="100/100/75/55/45/25/19/15/10", color=0x00ff56)
+        embed=discord.Embed(description="100/100/75/55/45/25/19/15/10", color=0x9c9684)
         embed.set_author(name="<<1코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
     if content.startswith("!2코확률"):
-        embed=discord.Embed(description="0/0/25/30/33/40/30/20/15", color=0x00ff56)
+        embed=discord.Embed(description="0/0/25/30/33/40/30/20/15", color=0x39b65a)
         embed.set_author(name="<<2코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
     if content.startswith("!3코확률"):
-        embed=discord.Embed(description="0/0/0/15/20/30/35/35/30", color=0x00ff56)
+        embed=discord.Embed(description="0/0/0/15/20/30/35/35/30", color=0x42c3ff)
         embed.set_author(name="<<3코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
     if content.startswith("!4코확률"):
-        embed=discord.Embed(description="0/0/0/0/2/5/15/25/30", color=0x00ff56)
+        embed=discord.Embed(description="0/0/0/0/2/5/15/25/30", color=0xa708a5)
         embed.set_author(name="<<4코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
     if content.startswith("!5코확률"):
-        embed=discord.Embed(description="0/0/0/0/0/0/1/5/15", color=0x00ff56)
+        embed=discord.Embed(description="0/0/0/0/0/0/1/5/15", color=0xff8e00)
         embed.set_author(name="<<5코스트 확률>>" , url=" ")
         await message.channel.send(embed=embed)
 
