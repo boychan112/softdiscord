@@ -268,8 +268,8 @@ async def on_message(message):
         embed.set_author(name="<<{}>>".format(nick))
         await message.channel.send(embed=embed)
     
-    if content.startswith("!깃헙"):
-        nick = message.content[4:]
+    if content.startswith("!깃허브"):
+        nick = message.content[5:]
         embed=discord.Embed(description="깃허브 {} 바로가기\nhttps://github.com/{}".format(nick,nick), color=0x00ff56)
         embed.set_author(name="<<{}>>".format(nick))
         await message.channel.send(embed=embed)
