@@ -85,6 +85,11 @@ async def on_message(message):
         embed=discord.Embed(description="<1교시>\n09:10 ~ 10:00\n\n<2교시>\n10:10 ~ 11:00\n\n<3교시>\n11:10 ~ 12:00\n\n<4교시>\n12:10 ~ 1:00\n\n<5교시>\n02:00 ~ 2:50\n\n<6교시>\n03:00 ~ 3:50\n\n<7교시>\n04:00 ~ 4:50", color=0x00ff56)
         embed.set_author(name="수원정보과학고등학교 시정표", url=" ")
         await message.channel.send(embed=embed)
+
+    if content.startswith("!40분 단축"):
+        embed=discord.Embed(description="<1교시>\n09:10 ~ 09:50\n\n<2교시>\n10:00 ~ 10:40\n\n<3교시>\n10:50 ~ 11:30\n\n<4교시>\n11:40 ~ 11:20\n\n<5교시>\n1:20 ~ 2:00\n\n<6교시>\n02:00 ~ 2:40\n\n<7교시>\n02:10 ~ 2:40", color=0x00ff56)
+        embed.set_author(name="수원정보과학고등학교 시정표", url=" ")
+        await message.channel.send(embed=embed)
         
     if content.startswith("!도움말"):
         embed=discord.Embed(description="```diff\n-------반디코-------\n!준민이 뺨따꾸 때리기\n!인백이의 드립은\n!자기소개\n!시간\n!깃헙 (아이디)\n!청소 (청소할 메시지 개수)\n!투표/(투표항목)/(투표항목)...\n!시간표\n!월시간표\n!화시간표\n!수시간표\n!목시간표\n!금시간표\n!공지 (공지내용)\n!오피지지\n!옵지 (닉네임)\n\n-------롤체-------\n!롤체지지\n!롤체 (닉네임)\n!(레벨)확률\n-------이터널 리턴-------\n!닥지 (닉네임)\n!음식지도\n!로드맵\n!지도\n!레시피```", color=0x00ff55)
