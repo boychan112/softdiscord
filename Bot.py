@@ -91,7 +91,7 @@ async def on_message(message):
         embed.set_author(name="수원정보과학고등학교 시정표", url=" ")
         await message.channel.send(embed=embed)
 
-    if content.startswith("!40분 단축"):
+    if content.startswith("!30분 단축"):
         embed=discord.Embed(description="<1교시>\n09:10 ~ 09:40\n\n<2교시>\n09:50 ~ 10:20\n\n<3교시>\n10:30 ~ 11:00\n\n<4교시>\n11:10 ~ 11:40\n\n<5교시>\n12:40 ~ 1:20\n\n<6교시>\n1:30 ~ 2:00\n\n<7교시>\n02:10 ~ 2:40", color=0x00ff56)
         embed.set_author(name="수원정보과학고등학교 시정표", url=" ")
         await message.channel.send(embed=embed)
