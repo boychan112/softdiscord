@@ -20,7 +20,7 @@ async def on_ready():
     change_status.start()
     
 status = cycle(["Visual Studio Code", "Dev C++", "League of Legend", "!도움말", "ZOOM","전략적 팀 전투","Starcraft","Overwatch"])
-@tasks.loop(seconds=10)
+@tasks.loop(seconds=3)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(status)))
 
