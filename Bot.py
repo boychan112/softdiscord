@@ -27,26 +27,11 @@ async def change_status():
 @client.event
 async def on_message(message):
     content = message.content
-    
-    if content.startswith("!준민이 뺨따구 때리기"):
-        await message.channel.send("짝짝짝짝짝짝짝짝짝짝짝짝짝짝")
-        
-    if content.startswith("!씨발오류"):
-        await message.channel.send("ㅈ같네")
-        
-    if content.startswith("노차희"):
-        await message.channel.send("바보")
 
     if content.startswith("!자기소개"):
         embed=discord.Embed(description="응애 나는야 IT소프트웨어과 1-9 반디코 도우미 봇", color=0x00ff56)
         embed.set_author(name="응애 나 아기 디코봇")
         await message.channel.send(embed=embed)
-
-    if content.startswith("!인백이의 드립은"):
-        await message.channel.send("개씹노잼입니다")
-        
-    if content.startswith("!민혁이의 봇은"):
-        await message.channel.send("작동 안되죠? 작동 안되죠? 작동 안되죠? 작동 안되죠? 작동 안되죠? 작동 안되죠? 작동 안되죠? 작동 안되죠?`")
 
     if content.startswith("!시간표"):
         embed=discord.Embed(title=" ", description=" ", color=0x00ff56)
